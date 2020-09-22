@@ -7,8 +7,3 @@ function detail() {
     require_once 'Vue/template.php';
 }
 
-// function tache($tache){
-//     var_dump( $tache );
-// echo json_encode( $tache );
-//     require_once 'Vue/exp.php';
-// }

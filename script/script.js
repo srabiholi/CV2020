@@ -1,12 +1,12 @@
-$('.expLine').hover( function() {
+$('.xpLine').hover( function() {
     $(this).toggleClass('shadow-2xl');
     $(this).toggleClass('shadow');
 });
 
 $( document ).ready(function() {
  
-    $('.expLine').click( function() {
-        $('.contenu').fadeIn('1000');
+    $('.xpLine').click( function() {
+        $('.content').fadeIn('1000');
 
     });
 
@@ -36,9 +36,9 @@ $('.action').click(function(){
         $('#result').children().remove();
         
         var ul;
-        contenu = document.getElementById("result");
+        content = document.getElementById("result");
         ul = document.createElement('ul');
-        contenu.append(ul);
+        content.append(ul);
         
 
         for( var i = 0; i < result.length; i++ ){
@@ -55,7 +55,7 @@ $('.action').click(function(){
 
             // Centre d'interet
 
-$('.centre_interet').click(function(){
-    $('.prout').fadeIn('1000');
+$('.hobbies').click(function(){
+    $('.test').fadeIn('1000');
     $('#result').children().remove();
 });

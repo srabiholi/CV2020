@@ -35,7 +35,7 @@ require_once 'header.php';
                     <?php foreach( $experiences as $experience ) : 
                             // var_dump($experience['exp_id']);
                             ?>
-                    <div class="shadow m-3 p-3 text-lg expLine action flex justify-between cursor-pointer bg-gray-200 bg-opacity-75" data-id="<?= $experience['exp_id'] ?>">
+                    <div class="shadow m-3 p-3 text-lg xpLine action flex justify-between cursor-pointer bg-gray-200 bg-opacity-75" data-id="<?= $experience['exp_id'] ?>">
                         <p><?= $experience['exp_dateDebut'] ?> - <?= $experience['exp_dateFin'] ?> :
                             <strong><?= $experience['exp_poste'] ?></strong> <?= strtoupper($experience['exp_lieu']) ?>
                         </p>
@@ -54,21 +54,24 @@ require_once 'header.php';
                         <!-- contenu dynamique -->
         <div class="flex flex-wrap">
 
-            <div class="w-full md:w-1/2 lg:w-2/4 border-solid border-4 border-green-600">
+            <div class="w-full md:w-1/2 lg:w-2/4 mb-10 p-5 border-solid border-4 border-green-600">
 
-            <div class="contenu hidden leading-loose h-64 w-6/6  mt-10 mx-auto p-5" id="result" style="background: url(Asset/fond.jpg)">
+            <div class="content hidden leading-loose w-6/6 mx-auto" id="result">
    
                     <!-- Dynamic Content -->
       
             </div>
-            <div  class="h-64 w-6/6 prout hidden">
-                    <p>prout!</p>
+            <div  class="w-6/6 test hidden p-5">
+                    <div class="bg-auto bg-center h-48" style="background: url(Asset/echec.jpg);">
+                    <p>Test!</p>
+                        
+                    </div>
             </div>    
             </div>
             <div class="w-full md:w-1/2 lg:w-2/4 border-solid border-4 border-red-600">
 
         
-                    <div class="w-full  border-solid border-4 border-blue-600">
+                    <div class="w-full border-solid border-4 border-blue-600">
 
                         <h1 class="text-2xl my-2">Formation</h1>
 
@@ -80,7 +83,7 @@ require_once 'header.php';
                         <?php endforeach;?>
                         
                     </div>
-                    <div class="w-full  border-solid border-4 border-blue-600">
+                    <div class="w-full border-solid border-4 border-blue-600">
                         col4
                     </div>
             </div>
@@ -88,30 +91,30 @@ require_once 'header.php';
         </div><!-- fin de la grid deuxieme ligne -->
 
 
-        <div class="grid grid-flow-col grid-rows-1 sm:grid-rows-4 md:grid-rows-2 xl:grid-rows-1">
+        <div class="flex flex-wrap">
 
-            <div class="bg-gray-400 bg-opacity-75 m-4 shadow expLine cursor-pointer">
+            <div class="lg:w-1/4 sm:w-full bg-gray-400 bg-opacity-75 m-4 shadow xpLine cursor-pointer">
                 <h2 class="text-2xl text-center mt-2">Compétences</h2>
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold block mx-auto my-5 py-2 px-4 rounded">
                 Voir
                 </button>
             </div>
 
-            <div class="bg-gray-400 bg-opacity-75 m-4 shadow expLine cursor-pointer">
+            <div class="lg:w-1/4 sm:w-full bg-gray-400 bg-opacity-75 m-4 shadow xpLine cursor-pointer">
                 <h2 class="text-2xl text-center mt-2">Centre d'interet</h2>
-                <button class="centre_interet bg-blue-500 hover:bg-blue-700 text-white font-bold block mx-auto my-5 py-2 px-4 rounded">
+                <button class="hobbies bg-blue-500 hover:bg-blue-700 text-white font-bold block mx-auto my-5 py-2 px-4 rounded">
             Voir
             </button>
             </div>
 
-            <div class="bg-gray-400 bg-opacity-75 m-4 shadow expLine cursor-pointer">
+            <div class="lg:w-1/4 sm:w-full bg-gray-400 bg-opacity-75 m-4 shadow xpLine cursor-pointer">
                 <h2 class="text-2xl text-center mt-2">Mes Valeurs</h2>
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold block mx-auto my-5 py-2 px-4 rounded">
                 Voir
                 </button>
             </div>
             
-            <div class="bg-gray-400 bg-opacity-75 m-4 shadow expLine cursor-pointer">
+            <div class="lg:w-1/4 sm:w-full bg-gray-400 bg-opacity-75 m-4 shadow xpLine cursor-pointer">
                 <h2 class="text-2xl text-center mt-2">Contact</h2>
                 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold block mx-auto my-5 py-2 px-4 rounded">
                 Voir
